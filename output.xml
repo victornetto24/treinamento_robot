@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.8 on win32)" generated="2024-02-22T17:58:56.267065" rpa="false" schemaversion="5">
+<suite id="s1" name="Ex01" source="C:\Users\victor.netto_sankhya\Documents\treinamento_robot\treinamento_robot\Ex01.robot">
+<test id="s1-t1" name="Imprimir Dicionario" line="17">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${PESSOA}[nome]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-22T17:58:56.387762" elapsed="0.005200"/>
+</kw>
+<status status="PASS" start="2024-02-22T17:58:56.383612" elapsed="0.010357"/>
+</test>
+<test id="s1-t2" name="Imprimir Frutas" line="20">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${FRUTA}[0]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-22T17:58:56.398659" elapsed="0.001044"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${FRUTA}[1]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-22T17:58:56.402986" elapsed="0.003000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${FRUTA}[2]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-22T17:58:56.406987" elapsed="0.001512"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${FRUTA}[3]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-22T17:58:56.410154" elapsed="0.004430"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${FRUTA}[4]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-22T17:58:56.416579" elapsed="0.006771"/>
+</kw>
+<status status="PASS" start="2024-02-22T17:58:56.397146" elapsed="0.029203"/>
+</test>
+<test id="s1-t3" name="Criar email" line="27">
+<kw name="Criar um email">
+<kw name="Catenate" owner="BuiltIn">
+<msg time="2024-02-22T17:58:56.444256" level="INFO">${email} = Victor_Netto_25@robot.com</msg>
+<var>${email}</var>
+<arg>${nome}_${sobrenome}_${idade}@robot.com</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="PASS" start="2024-02-22T17:58:56.443239" elapsed="0.001017"/>
+</kw>
+<return>
+<value>${email}</value>
+<status status="PASS" start="2024-02-22T17:58:56.444256" elapsed="0.000000"/>
+</return>
+<msg time="2024-02-22T17:58:56.444256" level="INFO">${resultado_email} = Victor_Netto_25@robot.com</msg>
+<var>${resultado_email}</var>
+<arg>${PESSOA}[nome]</arg>
+<arg>${PESSOA}[sobrenome]</arg>
+<arg>${PESSOA}[idade]</arg>
+<status status="PASS" start="2024-02-22T17:58:56.439687" elapsed="0.004569"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${resultado_email}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-22T17:58:56.447257" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-02-22T17:58:56.432892" elapsed="0.015602"/>
+</test>
+<status status="PASS" start="2024-02-22T17:58:56.275619" elapsed="0.185794"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Ex01">Ex01</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
